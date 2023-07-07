@@ -20,3 +20,4 @@ Programs written while working through [Learning Go](https://www.oreilly.com/lib
 - One use for the context is to provide manual cancellation of requests
 - Another use for the context is to provide automatic request cancellation with builtin support for cancellable contexts based on timeouts and deadlines
 - Idiomatic Go favors the explicit over the implicit
+- However, the context can also be used to pass metadata on a per-request basis
