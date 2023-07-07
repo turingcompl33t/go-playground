@@ -17,3 +17,6 @@ Programs written while working through [Learning Go](https://www.oreilly.com/lib
 - Go introduces the idea of context in order to address the need to pass metadata through call chains that are handled by "unknown" goroutines
 - Other languages solve this issue with the use of thread-local variables; Go cannot do this because it introduces its own concurrency primitive (it does not use OS threads directly)
 - It is a Go convention that the context is passed through a program as the first parameter to function calls
+- One use for the context is to provide manual cancellation of requests
+- Another use for the context is to provide automatic request cancellation with builtin support for cancellable contexts based on timeouts and deadlines
+- Idiomatic Go favors the explicit over the implicit
